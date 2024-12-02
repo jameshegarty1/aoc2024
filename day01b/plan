@@ -1,0 +1,5 @@
+Need to find frequency of left numbers occurring in the right list. The number of times it appears * the value of itself is the "similarity"
+Need to sum up the total similarity
+
+
+Problem is that for each element in A, we need to iterate over entirety of B. Instead, maybe we can create a hash map when we first parse the input.

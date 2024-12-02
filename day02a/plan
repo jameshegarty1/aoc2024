@@ -1,0 +1,18 @@
+One "report" per line of the input.
+
+Each report is a list of numbers called "levels" which are space separated.
+
+A report counts as "safe" if and only if:
+
+* The levels are either *all increasing* or *all decreasing*.
+* Any two adjacent levels differ by *at least one* and *at most three*.
+
+
+Answer: number of safe reports from the input.
+
+
+Plan:
+Iterate over data set line by line.
+Assume report is SAFE initially.
+
+Iterate over report. If next element is equal or abs_diff > 3 then set UNSAFE and exit report. After first check is done, we set increasing/decreasing flag. If next element violated that, then exit. Continue until done.

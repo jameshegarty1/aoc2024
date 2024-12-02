@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "day01a",
+    "day01b",
+    "day02a",
+    "day02b"
+]
+
+[workspace.dependencies]
+atoi = "2.0.0"

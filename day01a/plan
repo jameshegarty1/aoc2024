@@ -1,0 +1,5 @@
+Read the input into a left and right hand list. Sort both by size.
+
+Calculate the distance between the sorted lists element-wise.
+
+Add up the distances for all.
