@@ -1,0 +1,13 @@
+To fix a broken computer program.
+
+The goal of the program is to multiply numbers.
+
+Only instructions of the form "mul(X,Y)" can be accepted where X and Y are numbers up to 3 digits.
+
+Need to extract all the multiplication commands and sum them together.
+
+I think we should iterate over the bytes, find instances of "mul(" then check if the digits are valid.
+
+
+Iterate over bytes in windows of length (4) , maybe
+If we see pattern "mul(" then inspect the following characters. If we get a number with up to 3 sequential digits, continue, if its followed by a comma, continue, if we get another number with up to 3 sequential digits, continue, if we get a close parenthesis, then we have found an instruction and should compute the multiplication and add to a result variable.

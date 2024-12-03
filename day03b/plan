@@ -1,0 +1,24 @@
+Two more instructions to handle:
+
+do() enables future mul()
+don't() disables future mul()
+
+Program starts as enabled.
+
+Previous method of windows(4) wont really work as it was designed to work specifically with mul(.
+
+Option (A)
+We can do the same as before, and add all the instructions + their starting points (index where mul begins) to a data structure.
+
+Now we need to iterate again and identify the indices where do() and don't() instructions occur (index where the instruction ends)
+
+Now we should filter out the mul instructions which are in disabled areas of the memory.
+
+
+Option (B) 
+Re-design the algorithm to keep a boolean is_enabled updated as we iterate over the data. When we encounter a mul() instruction, we need only check if is_enabled. While iterating, we need to be able to identify any of the instructions.
+
+
+I will instead simply iterate over all the bytes. Will use the vec.starts_with() to identifyinstructions.
+
+
