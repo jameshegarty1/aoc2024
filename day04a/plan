@@ -1,0 +1,9 @@
+Need to wordsearch for "XMAS"
+
+It can appear in any direction.
+
+Plan:
+Parse bytes into grid. Loop over grid, whenever X is found, search for "M", if found, identify the direction of XMAS for that instance, then check if A and S can be found in the same direction. 
+
+
+Need to also consider boundary conditions.

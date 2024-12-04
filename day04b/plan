@@ -1,0 +1,39 @@
+For part 2 we actually have to find "MAS" in the shape of an X:
+
+```
+M.S
+.A.
+M.S
+
+```
+
+
+It should be pretty easy. We look for "A", then we check the 4 directions:
+
+(
+-1,-1, (M)
+-1,1, (M)
+1,-1, (S)
+1,1 (S)
+)
+
+
+Actually I was mistaken and there are 4 possible orientations which are allowed.
+
+...
+S.S
+.A.
+M.M
+...
+
+...
+S.M
+.A.
+S.M
+...
+
+...
+M.M
+.A.
+S.S
+...
