@@ -1,0 +1,5 @@
+So now, instead of voiding the updates which are out of order, we need to re-arrange them until they are correct. Then get the sum from the re-arranged, initially incorrect updates only.
+
+How to re-order the page numbers correctly?
+
+Lets try swapping the orders, then re-evaluating and keep swapping until it works.
