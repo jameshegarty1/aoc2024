@@ -1,0 +1,31 @@
+Input has 2 parts
+
+(1) - Page ordering rules
+
+X|Y means that if both X and Y are to be prints, X must be done before Y
+
+(2) Pages to produce in each update
+
+P1,P2,P3,P4...
+
+Need to check each update against the rules, if any rule is violated, then the update is void.
+
+The solution is the sum of the middle pages of the valid page updates.
+
+
+Plan:
+
+(1)
+Read the rules into a map where:
+
+key = page number
+value = list of pages which it must precede if both are present.
+
+(2)
+Loop over the updates.
+
+Within each update we have a comma separated list of pages.
+Each page we encounter, we need to check our rules. 
+If that page must occur before any other page WHICH HAS ALREADY come up within the update, then the update is void.
+
+If the update has not been voided, grab the middle page and add it to the solution.
