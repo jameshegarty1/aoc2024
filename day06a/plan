@@ -1,0 +1,7 @@
+Store locations of obstacles in a map.
+
+Store position and orientation of guar.
+
+Store boundary conditions.
+
+Step forwards in time, if guard is facing an obstacle, apply rotation, else step forwards. If boundary condition is violated, then finish.
