@@ -1,0 +1,20 @@
+Now we need to make the guard get stuck in an infinite loop, by adding an obstacle in a single other location
+
+In fact we need all the possible places where an obstacle would cause a loop, and count them.
+
+
+
+Plan:
+
+(1) During the first pass, add the locations of an empty space to a map.
+
+(2) Loop over the empty spaces, put a new obstacle there. Now let the guard step through and see if it causes an infinite loop.
+
+We can say an infinite loop is caused if the guard's position+orientation return to the same point which they have already been in.
+
+So as the guard moves, we need to store BOTH each distinct position and orientation.
+
+
+
+
+
