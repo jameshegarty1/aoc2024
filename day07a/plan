@@ -1,0 +1,24 @@
+Each line is an equation.
+
+Test value on LHS of :. Need to check whether numbers on RHS combined with operators can produce the test value
+
+Operators always work left-to-right.
+
+Numbers in the equation cannot be re-arranged.
+
+Add (+) and multiply (*) are the only operators.
+
+
+Need to sum up the test values which can be produced by inserting operators.
+
+
+
+Plan:
+
+(1) Define "equation" struct which has test value and list of numbers.
+
+(2) Iterate over data, create a vector of structs.
+
+(3) Identify number of spaces where operator could be inserted. = n-1
+
+
