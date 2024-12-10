@@ -1,0 +1,63 @@
+Input is a map of antennas.
+
+Frequency of antennas indicated by a letter (upper or lowercase) or a number.
+
+The signal applied by the antennas has effect only at locations which are resonant frequencies.
+
+These "antinodes" occur at points which are in line with 2 antennas of the same frequency. BUT only when one of the antennas is twice as far away as the other.
+
+
+
+A and a count as different frequencies.
+
+Antinodes CAN occur at locations which contain other antennas.
+
+How many unique locations within the bounds of the map contain an antinode?
+
+
+
+Plan:
+
+Generate map of antennas at each frequency.
+
+Calculate antinodes of each frequency by:
+
+(1) Finding locations where which are "inline" with 2 antennas. Note that there can be 1 single point which is inline with multiple different pairs.
+
+(2) If we have already identified that point, discard it, as we want unique/distinct ones only.
+
+
+Example:
+............
+........0...
+.....0......
+.......0....
+....0.......
+......A.....
+............
+............
+........A...
+.........A..
+............
+............
+
+
+
+Data structures:
+
+struct Point:
+x: usize
+y: uszie
+
+struct Antenna:
+location: Point
+frequency: char
+
+struct Map:
+max_x: usize
+max_y: usize
+antennas: HashMap<freq, Vec<Antenna>>
+
+
+To find collinear points:
+Take each combination of pairs of Antenna for each frequency nodes

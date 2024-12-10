@@ -1,0 +1,62 @@
+Map: Map { max_x: 11, max_y: 11, antennas: {'A': [Antenna { location: Point { x: 6, y: 5 }, frequency: 'A' }, Antenna { location: Point { x: 8, y: 8 }, frequency: 'A' }, Antenna { location: Point { x: 9, y: 9 }, frequency: 'A' }], '0': [Antenna { location: Point { x: 8, y: 1 }, frequency: '0' }, Antenna { location: Point { x: 5, y: 2 }, frequency: '0' }, Antenna { location: Point { x: 7, y: 3 }, frequency: '0' }, Antenna { location: Point { x: 4, y: 4 }, frequency: '0' }]} }
+Checking antennas at (6,5) and (8,8) with frequency A
+Vector: (-2, -3), GCD: 1, Norm: (-2, -3)
+Potential antinodes: Point { x: 6, y: 5 }, Point { x: 2, y: -1 }, Point { x: 8, y: 8 }, Point { x: 12, y: 14 }
+Antinode found! Point { x: 6, y: 5 }
+Antinode found! Point { x: 8, y: 8 }
+Register antinodes: [Point { x: 6, y: 5 }, Point { x: 8, y: 8 }]
+Checking antennas at (6,5) and (9,9) with frequency A
+Vector: (-3, -4), GCD: 1, Norm: (-3, -4)
+Potential antinodes: Point { x: 6, y: 5 }, Point { x: 0, y: -3 }, Point { x: 9, y: 9 }, Point { x: 15, y: 17 }
+Antinode found! Point { x: 6, y: 5 }
+Antinode found! Point { x: 9, y: 9 }
+Register antinodes: [Point { x: 6, y: 5 }, Point { x: 9, y: 9 }]
+Checking antennas at (8,8) and (9,9) with frequency A
+Vector: (-1, -1), GCD: 1, Norm: (-1, -1)
+Potential antinodes: Point { x: 8, y: 8 }, Point { x: 6, y: 6 }, Point { x: 9, y: 9 }, Point { x: 11, y: 11 }
+Antinode found! Point { x: 8, y: 8 }
+Antinode found! Point { x: 6, y: 6 }
+Antinode found! Point { x: 9, y: 9 }
+Antinode found! Point { x: 11, y: 11 }
+Register antinodes: [Point { x: 8, y: 8 }, Point { x: 6, y: 6 }, Point { x: 9, y: 9 }, Point { x: 11, y: 11 }]
+Checking antennas at (8,1) and (5,2) with frequency 0
+Vector: (3, -1), GCD: 1, Norm: (3, -1)
+Potential antinodes: Point { x: 8, y: 1 }, Point { x: 14, y: -1 }, Point { x: 5, y: 2 }, Point { x: -1, y: 4 }
+Antinode found! Point { x: 8, y: 1 }
+Antinode found! Point { x: 5, y: 2 }
+Register antinodes: [Point { x: 8, y: 1 }, Point { x: 5, y: 2 }]
+Checking antennas at (8,1) and (7,3) with frequency 0
+Vector: (1, -2), GCD: 1, Norm: (1, -2)
+Potential antinodes: Point { x: 8, y: 1 }, Point { x: 10, y: -3 }, Point { x: 7, y: 3 }, Point { x: 5, y: 7 }
+Antinode found! Point { x: 8, y: 1 }
+Antinode found! Point { x: 7, y: 3 }
+Antinode found! Point { x: 5, y: 7 }
+Register antinodes: [Point { x: 8, y: 1 }, Point { x: 7, y: 3 }, Point { x: 5, y: 7 }]
+Checking antennas at (8,1) and (4,4) with frequency 0
+Vector: (4, -3), GCD: 1, Norm: (4, -3)
+Potential antinodes: Point { x: 8, y: 1 }, Point { x: 16, y: -5 }, Point { x: 4, y: 4 }, Point { x: -4, y: 10 }
+Antinode found! Point { x: 8, y: 1 }
+Antinode found! Point { x: 4, y: 4 }
+Register antinodes: [Point { x: 8, y: 1 }, Point { x: 4, y: 4 }]
+Checking antennas at (5,2) and (7,3) with frequency 0
+Vector: (-2, -1), GCD: 1, Norm: (-2, -1)
+Potential antinodes: Point { x: 5, y: 2 }, Point { x: 1, y: 0 }, Point { x: 7, y: 3 }, Point { x: 11, y: 5 }
+Antinode found! Point { x: 5, y: 2 }
+Antinode found! Point { x: 1, y: 0 }
+Antinode found! Point { x: 7, y: 3 }
+Antinode found! Point { x: 11, y: 5 }
+Register antinodes: [Point { x: 5, y: 2 }, Point { x: 1, y: 0 }, Point { x: 7, y: 3 }, Point { x: 11, y: 5 }]
+Checking antennas at (5,2) and (4,4) with frequency 0
+Vector: (1, -2), GCD: 1, Norm: (1, -2)
+Potential antinodes: Point { x: 5, y: 2 }, Point { x: 7, y: -2 }, Point { x: 4, y: 4 }, Point { x: 2, y: 8 }
+Antinode found! Point { x: 5, y: 2 }
+Antinode found! Point { x: 4, y: 4 }
+Antinode found! Point { x: 2, y: 8 }
+Register antinodes: [Point { x: 5, y: 2 }, Point { x: 4, y: 4 }, Point { x: 2, y: 8 }]
+Checking antennas at (7,3) and (4,4) with frequency 0
+Vector: (3, -1), GCD: 1, Norm: (3, -1)
+Potential antinodes: Point { x: 7, y: 3 }, Point { x: 13, y: 1 }, Point { x: 4, y: 4 }, Point { x: -2, y: 6 }
+Antinode found! Point { x: 7, y: 3 }
+Antinode found! Point { x: 4, y: 4 }
+Register antinodes: [Point { x: 7, y: 3 }, Point { x: 4, y: 4 }]
+13

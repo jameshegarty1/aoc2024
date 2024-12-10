@@ -1,0 +1,8 @@
+[package]
+name = "day08a"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+atoi = { workspace = true }
+gcd = "2.3.0"
